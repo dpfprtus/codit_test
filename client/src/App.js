@@ -50,7 +50,6 @@ function App() {
       const pdfBlob = URL.createObjectURL(file);
       setPdfFile(pdfBlob);
       handleFileUpload(file); // PDF 파일 서버에 전송
-      console.log("pdf 전송");
     }
   };
 
