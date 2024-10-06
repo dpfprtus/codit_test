@@ -50,6 +50,7 @@ function App() {
       const pdfBlob = URL.createObjectURL(file);
       setPdfFile(pdfBlob);
       handleFileUpload(file); // PDF 파일 서버에 전송
+      console.log("pdf 전송");
     }
   };
 
@@ -58,7 +59,7 @@ function App() {
     const formData = new FormData();
     formData.append("pdf", file);
 
-    fetch("http://localhost:3000/api/upload", {
+    fetch("http://localhost:9000/api/upload", {
       method: "POST",
       body: formData,
     })
