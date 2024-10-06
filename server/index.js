@@ -1,7 +1,7 @@
 import express from "express";
 import pdfRouter from "./src/api/pdf/pdf.index.js";
 const app = express();
-const port = 3000;
+const port = 9000;
 
 app.use("/api", pdfRouter);
 app.listen(port, () => {
